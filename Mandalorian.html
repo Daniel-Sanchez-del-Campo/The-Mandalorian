@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta http-equiv="X-UA.Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./Mandalorian.css">
+  <title>The Madalorian Shop</title>
+  <style>
+    .slide {
+				position: relative;
+				box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+				margin-top: 26px;
+			}
+
+			.slide-inner {
+				position: relative;
+				overflow: hidden;
+				width: 100%;
+				height: calc( 250px + 3em);
+				padding-left: 200px;
+			}
+
+			.slide-open:checked + .slide-item {
+				position: static;
+				opacity: 100;
+			}
+
+			.slide-item {
+				position: absolute;
+				opacity: 0;
+				-webkit-transition: opacity 0.6s ease-out;
+				transition: opacity 0.6s ease-out;
+			}
+
+			.slide-item img {
+				display: block;
+				height: auto;
+				max-width: 60%;
+        padding-left: 300px;
+			}
+
+			.slide-control {
+				background: rgba(53, 140, 199, 0.966);
+				border-radius: 50%;
+				color: #fff;
+				cursor: pointer;
+				display: none;
+				font-size: 40px;
+				height: 40px;
+				line-height: 35px;
+				position: absolute;
+				top: 50%;
+				-webkit-transform: translate(0, -50%);
+				cursor: pointer;
+				-ms-transform: translate(0, -50%);
+				transform: translate(0, -50%);
+				text-align: center;
+				width: 40px;
+				z-index: 10;
+			}
+
+			.slide-control.prev {
+				left: 2%;
+			}
+
+			.slide-control.next {
+				right: 2%;
+			}
+
+			.slide-control:hover {
+				background: rgba(13, 116, 185, 0.541);
+				color: #aaaaaa;
+			}
+
+			#slide-1:checked ~ .control-1,
+			#slide-2:checked ~ .control-2,
+			#slide-3:checked ~ .control-3 {
+				display: block;
+			}
+
+			.slide-indicador {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				position: absolute;
+				bottom: 2%;
+				left: 0;
+				right: 0;
+				text-align: center;
+				z-index: 10;
+			}
+
+			.slide-indicador li {
+				display: inline-block;
+				margin: 0 5px;
+			}
+
+			.slide-circulo {
+				color: #828282;
+				cursor: pointer;
+				display: block;
+				font-size: 35px;
+			}
+
+			.slide-circulo:hover {
+				color: #aaaaaa;
+			}
+
+			#slide-1:checked ~ .control-1 ~ .slide-indicador li:nth-child(1) .slide-circulo,
+			#slide-2:checked ~ .control-2 ~ .slide-indicador li:nth-child(2) .slide-circulo,
+			#slide-3:checked ~ .control-3 ~ .slide-indicador li:nth-child(3) .slide-circulo {
+				color: #428bca;
+			}
+
+			#titulo {
+				width: 100%;
+				position: absolute;
+				padding: 0px;
+				margin: 0px auto;
+				text-align: center;
+				font-size: 27px;
+				color: rgba(255, 255, 255, 1);
+				font-family: 'Open Sans', sans-serif;
+				z-index: 9999;
+				text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+			}
+  </style>
+  </head>
+  <header>
+	<div class="overlay">
+		<h1>The Mandalorian Shop</h1>
+		<p>Tienda online del Mandalorian</p>
+			<br>
+
+</header>
+
+<body>
+	<div id="header">
+		<ul class="nav">
+		  <li><a href="./Mandalorian.html"><b>Inicio</b></a></li>
+		  <li><a href=""><b>Nuestros productos</b></a>
+			<ul>
+			  <li><a href="./Mandalorian_Figuras.html">- Funkos y Figuras</a></li>
+			  <li><a href="./Mandalorian_Ropa.html">- Ropa</a></li>
+			  <li><a href="./Mandalorian_Complementos.html">- Complementos</a></li>
+			  </li>
+			</ul>
+			<li><a href="./Formulario_Mandalorian.html"><b>Formulario de Registro</b></a>
+			</li>
+		<li><a href="./Login_Mandalorian.html"><b>Login</b></a>
+			</li>
+	  </div>
+  </br></br></br></br></br></br></br>
+  <div class="slide">
+    <div class="slide-inner">
+      <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden="" checked="checked">
+      <div class="slide-item">
+        <img src="https://zavers.es/12854-thickbox_default/starw59.jpg">
+      </div>
+      <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
+      <div class="slide-item">
+        <img src="https://www.mundodeportivo.com/r/GODO/MD/p7/ContraPortada/Imagenes/2020/03/05/Recortada/img_mruizl_20200305-125121_imagenes_md_otras_fuentes_figura_yoda-kRdF-U473973498910HLG-572x616@MundoDeportivo-Web.jpg">
+      </div>
+      <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
+      <div class="slide-item">
+        <img src="https://m.media-amazon.com/images/I/61bDAiuLpGL._AC_SX679_.jpg">
+      </div>
+      <label for="slide-3" class="slide-control prev control-1">‹</label>
+      <label for="slide-2" class="slide-control next control-1">›</label>
+      <label for="slide-1" class="slide-control prev control-2">‹</label>
+      <label for="slide-3" class="slide-control next control-2">›</label>
+      <label for="slide-2" class="slide-control prev control-3">‹</label>
+      <label for="slide-1" class="slide-control next control-3">›</label>
+      <ol class="slide-indicador">
+        <li>
+          <label for="slide-1" class="slide-circulo">•</label>
+        </li>
+        <li>
+          <label for="slide-2" class="slide-circulo">•</label>
+        </li>
+        <li>
+          <label for="slide-3" class="slide-circulo">•</label>
+        </li>
+      </ol>
+    </div>
+  </div>
+</br>
+  <p>-Esta es una tienda para los amantes del Mandalorian-</p>
+</br>
+  <p>-Aqui podra encontrar una gran cantidad de articulos para todos los gustos-</p>
+</br>
+<div class="container-a4">
+	<ul class="caption-style-4">
+		<li>
+			<img height="300px" width="303px" src="https://zavers.es/12854-thickbox_default/starw59.jpg" alt="">
+			<div class="caption">
+				<div class="blur"></div>
+				<div class="caption-text">
+					<h1>Funko de Th e Mandalorian</h1>
+					<p>14,95€</p>
+					<a href="https://www.game.es/figura-pop-star-wars-the-mandalorian-the-mandalorian-merchandising-173952"><p>ver producto</p></a>
+				</div>
+			</div>
+		</li>
+	
+		<li>
+			<img  height="300px" width="304px" src="https://img.joomcdn.net/8c9b0efe3cd3e29a101055eff37566e04c4a2442_1024_1024.jpeg" alt="">
+			<div class="caption">
+				<div class="blur"></div>
+				<div class="caption-text">
+					<h1>Camiseta negra Casco mandaloriano</h1>
+					<p>13€</p>
+					<a href="https://www.joom.com/es/products/60a8bbf48c167801db707fa3"><p>ver producto</p></a>
+				</div>
+			</div>
+		</li>
+		<li>
+			<img  height="300px" width="304px" src="https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12433534-2064746658034142.jpg" alt="">
+			<div class="caption">
+			  <div class="blur"></div>
+			  <div class="caption-text">
+				<h1>Muñeco baby Yoda</h1>
+				<p>54,49€</p>
+				<a href="https://www.zavvi.es/merch-action-figures/figura-animatronica-el-nino-baby-yoda-the-mandalorian-hasbro-star-wars/12433534.html"><p>ver producto</p></a>
+			  </div>
+			</div>
+			</li>
+		<li>
+			<img height="300px" width="304px" src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/12732784-1154814816385846.jpg" alt="">
+			<div class="caption">
+				<div class="blur"></div>
+				<div class="caption-text">
+					<h1>Casco del Mandalorian</h1>
+					<p>134,99€</p>
+					<a href="https://www.zavvi.es/toys-role-play-accessories/casco-electronico-the-mandalorian-a-tamano-real-hasbro-star-wars-the-black-series/12732784.html"><p>ver producto</p></a>
+				</div>
+			</div>
+		</li>
+		<li>
+			<img height="300px" width="304px" src="https://cdn.shopify.com/s/files/1/0071/0977/1319/products/Taza_BabyYoda_1_portada_1024x.jpg?v=1576774209" alt="">
+			<div class="caption">
+				<div class="blur"></div>
+				<div class="caption-text">
+					<h1>Taza abrazo de baby Yoda</h1>
+					<p>10€</p>
+					<a href="https://taronbox.com/products/taza-abrazo-baby-yoda"><p>ver producto</p></a>
+				</div>
+			</div>
+		</li>
+	</ul>
+</br></br></br>
+</div>
+<p>-Muchos más productos te esperan, ve a echarles un ojo-</p>
+</br></br></br></br>
+</body>
+<footer>
+	<div class="text-center" style="background-color: white;">
+		© 2020 Copyright
+	  </div>
+</footer>
+</html>
