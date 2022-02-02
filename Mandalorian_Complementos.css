@@ -1,0 +1,261 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+body{height: 900px;}
+header {
+	background: url('http://www.autodatz.com/wp-content/uploads/2017/05/Old-Car-Wallpapers-Hd-36-with-Old-Car-Wallpapers-Hd.jpg');
+	text-align: center;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	background-color:lightgrey;
+    border: 3px solid rgb(54, 248, 255);
+	background-image:url(https://i0.wp.com/hipertextual.com/wp-content/uploads/2021/01/The-Mandalorian-portada-scaled.jpeg?fit=2560%2C1440&ssl=1) ;
+}
+header .overlay{
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+    background-image: linear-gradient( 135deg, #0b014269 10%, #7182e46b 100%);
+	
+}
+
+h1 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 80px;
+	margin-bottom: 30px;
+}
+
+h3, p {
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 30px;
+}
+
+button {
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 50px;
+	color: #333;
+	background: #fff;
+	margin-bottom: 50px;
+	box-shadow: 0 3px 20px 0 #0000003b;
+}
+button:hover{
+	cursor: pointer;
+}
+.titulo{
+    color: white;
+    font-size: 50px;
+    font-weight: 80px;
+    padding-left: 250px;
+    padding-bottom: -300px;
+    padding-top: 5px;
+    background-color:lightgrey;
+    border: 3px solid rgb(54, 248, 255);
+  }
+
+.imghvr-reveal-up:before {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+}
+
+  
+  body{
+    background-image: url(https://i.blogs.es/4c9232/cartel-mandalorian-the/1366_2000.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+  }
+  
+  * {
+    margin:0px;
+    padding:0px;
+  }
+  
+  #header {
+    margin:auto;
+    width:500px;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  ul, ol {
+    list-style:none;
+	z-index: 10;
+  }
+  
+  .nav > li {
+    float:left;
+  }
+  
+  .nav li a {
+    background-color:rgb(150, 172, 221);
+    color:black;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+    box-shadow:5px 5px 2.5px rgb(19, 107, 207);
+  }
+  
+  .nav li a:hover {
+    background-color:rgb(72, 107, 172);
+  }
+  
+  .nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+  }
+  
+  .nav li:hover > ul {
+    display:block;
+  }
+  
+  .nav li ul li {
+    position:relative;
+  }
+  
+  .nav li ul li ul {
+    right:-140px;
+    top:0px;
+  }
+  
+  p{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: 40px;
+    background-color:lightgrey;
+    border: 3px solid rgb(54, 284, 255); 
+	text-align: center;
+     
+  }
+  h1,h2,h3,h4{
+		padding: 0px;
+		margin: 0px;
+  	}
+
+  .caption-style-4{
+		list-style-type: none;
+		margin: 0px;
+		padding: 0px;
+
+	}
+
+	.caption-style-4 li{
+		float: left;
+		padding: 0px;
+		position: relative;
+		overflow: hidden;
+
+	}
+
+	.caption-style-4 li:hover .caption{
+		opacity: 1;
+	}
+
+	.caption-style-4 li:hover img{
+		opacity: 1;
+		transform: scale(1.15,1.15);
+		-webkit-transform:scale(1.15,1.15);
+		-moz-transform:scale(1.15,1.15);
+		-ms-transform:scale(1.15,1.15);
+		-o-transform:scale(1.15,1.15);
+	}
+
+
+	.caption-style-4 img{
+		margin: 0px;
+		padding: 0px;
+		float: left;
+		z-index: 4;
+	}
+
+
+	.caption-style-4 .caption{
+		cursor: pointer;
+		position: absolute;
+		opacity: 0;
+		-webkit-transition:all 0.45s ease-in-out;
+		-moz-transition:all 0.45s ease-in-out;
+		-o-transition:all 0.45s ease-in-out;
+		-ms-transition:all 0.45s ease-in-out;
+		transition:all 0.45s ease-in-out;
+	}
+
+	.caption-style-4 img{
+		-webkit-transition:all 0.25s ease-in-out;
+		-moz-transition:all 0.25s ease-in-out;
+		-o-transition:all 0.25s ease-in-out;
+		-ms-transition:all 0.25s ease-in-out;
+		transition:all 0.25s ease-in-out;
+	}
+	.caption-style-4 .blur{
+		background-color: rgba(0,0,0,0.65);
+		height: 300px;
+		width: 400px;
+		z-index: 5;
+		position: absolute;
+	}
+
+	.caption-style-4 .caption-text h1{
+		text-transform: uppercase;
+		font-size: 24px;
+	}
+	.caption-style-4 .caption-text{
+		z-index: 10;
+		color: #fff;
+		position: absolute;
+		width: 304px;
+		height: 300px;
+		text-align: center;
+		top:100px;
+	}
+
+	.content{
+		margin-top: 100px;
+		margin-left: 100px;
+		width: 700px;
+	}
+	.content h1, .content h2{
+		font-family: "Source Sans Pro",sans-serif;
+		color: #ecf0f1;
+		padding: 0px;
+		margin: 0px;
+		font-weight: normal;
+	}
+
+	.content h1{
+		font-weight: 900;
+		font-size: 64px;
+	}
+
+	.content h2{
+		font-size:26px;
+	}
+
+	.content p{
+		color: #ecf0f1;
+		font-family: "Lato";
+		line-height: 28px;
+		font-size: 15px;
+		padding-top: 50px;
+	}
+
+	p.credit{
+		padding-top: 20px;
+		font-size: 12px;
+	}
+
+	p a{
+		color: #ecf0f1;
+	}
+
+	.fork{
+		position: absolute;
+		top:0px;
+		left: 0px;
+	}
+  
