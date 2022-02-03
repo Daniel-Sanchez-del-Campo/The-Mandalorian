@@ -10,8 +10,7 @@ header {
 	position: relative;
 	overflow: hidden;
 	background-color:lightgrey;
-    border: 3px solid rgb(54, 248, 255);
-	background-image:url(https://i0.wp.com/hipertextual.com/wp-content/uploads/2021/01/The-Mandalorian-portada-scaled.jpeg?fit=2560%2C1440&ssl=1) ;
+	background-image:url(https://w0.peakpx.com/wallpaper/899/314/HD-wallpaper-baby-yoda-grogu-star-wars-the-mandalorian.jpg) ;
 }
 header .overlay{
 	width: 100%;
@@ -24,13 +23,13 @@ header .overlay{
 }
 
 h1 {
-	font-family: 'Dancing Script', cursive;
+	font-family: 'Fantasy';
 	font-size: 80px;
 	margin-bottom: 30px;
 }
 
 h3, p {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Fantasy';
 	margin-bottom: 30px;
 }
 
@@ -79,7 +78,7 @@ button:hover{
   #header {
     margin:auto;
     width:500px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Fantasy';
   }
   
   ul, ol {
@@ -260,4 +259,5 @@ button:hover{
 		left: 0px;
 	}
   
+	
 	
