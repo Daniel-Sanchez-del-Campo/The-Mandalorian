@@ -13,11 +13,13 @@ background-size: cover;
 h1{
 background-color: papayawhip;
 box-shadow: 5px 5px 2.5px lightcoral;
+font-family:'Fantasy';
 }
 h2{
 background-color: rgba(202, 144, 214, 0.5);
 color: whitesmoke;
 border: 3px lightcoral;
+font-family: 'Fantasy';
 }
 
 .contact_form{
@@ -180,7 +182,7 @@ right: 0;
 #header {
   margin:auto;
   width:500px;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family:'Fantasy';
 }
 
 ul, ol {
@@ -224,3 +226,4 @@ z-index: 100;
   right:-140px;
   top:0px;
 }
+
